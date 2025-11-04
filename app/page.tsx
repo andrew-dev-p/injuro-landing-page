@@ -1,6 +1,27 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import {
+  Hero,
+  BeliefStatement,
+  CaseReview,
+  CaseTypes,
+  HowItWorks,
+  ProvenResults,
+  Testimonials,
+  FAQ,
+  WhyInjuro,
+} from "@/components/sections";
 
 export default function Home() {
-  return <Button>Click me</Button>;
+  return (
+    <main>
+      <Hero />
+      <BeliefStatement />
+      <ProvenResults />
+      <CaseTypes />
+      <WhyInjuro />
+      <HowItWorks />
+      <Testimonials />
+      <FAQ />
+      <CaseReview />
+    </main>
+  );
 }
