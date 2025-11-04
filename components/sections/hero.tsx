@@ -28,7 +28,7 @@ export const Hero = () => {
           so powerful, it beats the rest.
         </span>
       </h1>
-      <p className="z-10 text-(--text-strong) text-center text-md leading-[1.62] md:text-2xl md:leading-normal max-w-[660px]">
+      <p className="z-10 text-(--text-strong) text-center text-base leading-[1.62] md:text-2xl md:leading-normal max-w-[660px]">
         Higher quality results, lower costs. Injuro helps you win more while
         keeping more money in your pocket.
       </p>

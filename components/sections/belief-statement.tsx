@@ -145,7 +145,7 @@ export const BeliefStatement = () => {
         <span className="word inline-block opacity-20">their</span>{" "}
         <span className="word inline-block opacity-20">hands.</span>
       </p>
-      <p className="text-md md:text-2xl text-(--text-surface) text-center leading-[1.62] md:leading-normal max-w-[622px]">
+      <p className="text-base md:text-2xl text-(--text-surface) text-center leading-[1.62] md:leading-normal max-w-[622px]">
         Our AI-powered system ensures you get world-class accuracy in your case
         while keeping legal costs the lowest in the industry.
       </p>

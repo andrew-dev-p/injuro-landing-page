@@ -8,7 +8,7 @@ import { CountUp } from "../common/count-up";
 export const ProvenResults = () => {
   return (
     <section>
-      <div className="relative mx-3 rounded-4xl py-20 px-16 bg-(--bg-black) space-y-[200px] overflow-hidden">
+      <div className="relative mx-3 rounded-4xl py-16 px-5 md:py-20 md:px-16 bg-(--bg-black) space-y-8 md:space-y-[200px] overflow-hidden">
         <Image
           src="/images/noise.png"
           alt="Background"
@@ -22,25 +22,25 @@ export const ProvenResults = () => {
           <p
             className={cn(
               playfairDisplay.className,
-              "text-[52px] leading-[1.23] tracking-[-0.01em] text-white"
+              "text-[40px] md:text-[52px] leading-[1.2] md:leading-[1.23] tracking-[-0.01em] text-white"
             )}
           >
             Backed by{" "}
             <span className="italic gradient-text-proven">Proven Results</span>
           </p>
-          <p className="text-lg leading-[1.67] text-(--text-white-alpha) max-w-[775px]">
+          <p className="text-base md:text-lg leading-[1.62] md:leading-[1.67] text-(--text-white-alpha) max-w-[775px]">
             Injuro is supported by personal injury lawyers with decades of
             experience and{" "}
-            <span className="font-medium leading-[1.33] text-white">
+            <span className="font-medium leading-tight md:leading-[1.33] text-white">
               hundreds of millions won
             </span>{" "}
             for clients.
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-10 relative z-10">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-10 relative z-10">
           {provenResultsStats.map((stat, index) => (
             <div key={index} className="space-y-5">
-              <p className="font-medium text-7xl leading-[1.31] text-white">
+              <p className="font-medium text-[32px] md:text-7xl leading-tight md:leading-[1.31] text-white tracking-[-0.01em] md:tracking-normal">
                 {stat.prefix}
                 <CountUp
                   to={stat.value}
@@ -53,10 +53,10 @@ export const ProvenResults = () => {
               </p>
               <div className="h-px bg-(--stroke-white-alpha)" />
               <div className="">
-                <p className="text-white text-2xl leading-[1.33]">
+                <p className="text-white text-base md:text-2xl leading-tight md:leading-[1.33]">
                   {stat.title}
                 </p>
-                <p className="text-(--text-white-alpha) leading-[1.62]">
+                <p className="text-(--text-white-alpha) text-sm md:text-base leading-[1.57] md:leading-[1.62]">
                   {stat.description}
                 </p>
               </div>
