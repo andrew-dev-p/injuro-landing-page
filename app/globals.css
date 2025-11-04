@@ -79,7 +79,10 @@
   --text-label: #184f74;
   --text-soft: #658392;
   --text-surface: #425662;
+  --text-white-alpha: rgba(255, 255, 255, 0.7);
   --bg-blue-soft: #f2f8fd;
+  --bg-black: #222a2f;
+  --stroke-white-alpha: rgba(255, 255, 255, 0.2);
 }
 
 .dark {
@@ -119,7 +122,10 @@
   --text-label: #184f74;
   --text-soft: #658392;
   --text-surface: #425662;
+  --text-white-alpha: rgba(255, 255, 255, 0.7);
   --bg-blue-soft: #f2f8fd;
+  --bg-black: #222a2f;
+  --stroke-white-alpha: rgba(255, 255, 255, 0.2);
 }
 
 @layer base {
@@ -145,4 +151,11 @@
 
 .container-md {
   @apply max-w-[1288px] mx-auto;
+}
+
+.gradient-text-proven {
+  background: linear-gradient(90deg, #77debe 0%, #52abde 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

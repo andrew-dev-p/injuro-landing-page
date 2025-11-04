@@ -1,5 +1,5 @@
 import { Button } from "../ui";
-import { HeroGraphics } from "../icons/hero-graphics";
+import { HeroGraphics } from "../svgs/hero-graphics";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { playfairDisplay } from "@/app/fonts";
