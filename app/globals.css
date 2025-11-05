@@ -84,6 +84,8 @@
   --bg-black: #222a2f;
   --stroke-white-alpha: rgba(255, 255, 255, 0.2);
   --stroke-surface: #ced8de;
+  --stroke-hunter-lighter: #ecf4f0;
+  --stroke-hunter-light: #dbece3;
 }
 
 .dark {
@@ -128,6 +130,8 @@
   --bg-black: #222a2f;
   --stroke-white-alpha: rgba(255, 255, 255, 0.2);
   --stroke-surface: #ced8de;
+  --stroke-hunter-lighter: #ecf4f0;
+  --stroke-hunter-light: #dbece3;
 }
 
 @layer base {
@@ -162,7 +166,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-case-types {
+.heading-gradient-text {
   background: linear-gradient(90deg, #1eb792 0%, #0198cc 100%);
   background-clip: text;
   -webkit-background-clip: text;

@@ -15,7 +15,7 @@ export const CaseTypes = () => {
             )}
           >
             Represent Yourself,{" "}
-            <span className="italic gradient-text-case-types">Win More</span>
+            <span className="italic heading-gradient-text">Win More</span>
           </p>
           <p className="max-w-[586px] text-base md:text-lg leading-[1.62] md:leading-[1.67] text-(--text-surface)">
             Explore the types of personal injury cases you can handle directly

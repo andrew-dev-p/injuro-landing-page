@@ -3,3 +3,8 @@ export * from "./hero-graphics";
 export { BurgerMenu } from "./burger-menu";
 export { Close } from "./close";
 export * from "./proven-results-spotlight";
+export * from "./why-injuro-spotlight";
+export * from "./money";
+export * from "./case";
+export * from "./ai";
+export * from "./globe";

@@ -1,3 +1,5 @@
+import { AI, Case, Globe, Money } from "@/components/svgs";
+
 export const provenResultsStats = [
   {
     prefix: "$",
@@ -53,5 +55,34 @@ export const caseTypesData = [
     title: "Workplace Injuries",
     description: "Quality and speed combined—cases move forward efficiently.",
     image: "/images/case-types-4.png",
+  },
+];
+
+export const whyInjuroData = [
+  {
+    id: "1",
+    title: "More Money in Your Pocket",
+    description:
+      "Industry-leading low fees so you keep the majority of your settlement.",
+    icon: Money,
+  },
+  {
+    id: "2",
+    title: "All-in-One Case Control",
+    description:
+      "From start to settlement, every step is handled with precision.",
+    icon: Case,
+  },
+  {
+    id: "3",
+    title: "Unmatched Case Quality",
+    description: "Advanced AI + expert input deliver stronger results.",
+    icon: AI,
+  },
+  {
+    id: "4",
+    title: "Nationwide Confidence",
+    description: "Trusted across the country for quality and affordability.",
+    icon: Globe,
   },
 ];
