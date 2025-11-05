@@ -7,7 +7,7 @@ import { CountUp } from "../common/count-up";
 
 export const ProvenResults = () => {
   return (
-    <section>
+    <section className="bg-linear-to-b from-white to-(--bg-blue-soft)">
       <div className="relative mx-3 rounded-4xl py-16 px-5 md:py-20 md:px-16 bg-(--bg-black) space-y-8 md:space-y-[200px] overflow-hidden">
         <Image
           src="/images/noise.png"

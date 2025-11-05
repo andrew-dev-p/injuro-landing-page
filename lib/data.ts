@@ -28,3 +28,30 @@ export const provenResultsStats = [
     description: "Money clients keep compared to traditional lawyers.",
   },
 ];
+
+export const caseTypesData = [
+  {
+    id: "1",
+    title: "Motor Vehicle Accident",
+    description: "AI builds airtight arguments with unmatched accuracy.",
+    image: "/images/case-types-1.png",
+  },
+  {
+    id: "2",
+    title: "Precision Liability",
+    description: "Every detail analyzed better than any traditional approach.",
+    image: "/images/case-types-2.png",
+  },
+  {
+    id: "3",
+    title: "Animal Attack",
+    description: "Keep 2x more of your recovery compared to hiring a lawyer.",
+    image: "/images/case-types-3.png",
+  },
+  {
+    id: "4",
+    title: "Workplace Injuries",
+    description: "Quality and speed combined—cases move forward efficiently.",
+    image: "/images/case-types-4.png",
+  },
+];

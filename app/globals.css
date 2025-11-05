@@ -83,6 +83,7 @@
   --bg-blue-soft: #f2f8fd;
   --bg-black: #222a2f;
   --stroke-white-alpha: rgba(255, 255, 255, 0.2);
+  --stroke-surface: #ced8de;
 }
 
 .dark {
@@ -126,6 +127,7 @@
   --bg-blue-soft: #f2f8fd;
   --bg-black: #222a2f;
   --stroke-white-alpha: rgba(255, 255, 255, 0.2);
+  --stroke-surface: #ced8de;
 }
 
 @layer base {
@@ -150,11 +152,18 @@
 }
 
 .container-md {
-  @apply max-w-[1288px] mx-auto;
+  @apply max-w-[1312px] mx-auto;
 }
 
 .gradient-text-proven {
   background: linear-gradient(90deg, #77debe 0%, #52abde 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-case-types {
+  background: linear-gradient(90deg, #1eb792 0%, #0198cc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
