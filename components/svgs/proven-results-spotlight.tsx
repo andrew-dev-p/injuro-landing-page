@@ -1,17 +1,20 @@
-export const ProvenResultsSpotlight = () => {
+export const ProvenResultsSpotlight = ({
+  className,
+}: {
+  className?: string;
+}) => {
   return (
     <svg
-      width="989"
-      height="738"
-      viewBox="0 0 989 738"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute inset-0 w-full h-full"
-      preserveAspectRatio="xMidYMid slice"
+      width="1593"
+      height="1451"
+      viewBox="0 0 1593 1451"
+      fill="none"
+      className={className}
     >
       <g filter="url(#filter0_f_210_96906)">
         <path
-          d="M1142.52 -30.8219C1142.52 -30.8219 1097.65 162.084 833.866 364.362C570.083 566.64 450.037 513.237 450.037 513.237"
+          d="M1142.52 450.033C1142.52 450.033 1097.65 642.939 833.866 845.217C570.083 1047.5 450.037 994.093 450.037 994.093"
           stroke="url(#paint0_linear_210_96906)"
           strokeWidth="300"
           strokeLinecap="round"
@@ -20,8 +23,8 @@ export const ProvenResultsSpotlight = () => {
       <defs>
         <filter
           id="filter0_f_210_96906"
-          x="0"
-          y="-480.855"
+          x="0.00012207"
+          y="0"
           width="1592.55"
           height="1450.47"
           filterUnits="userSpaceOnUse"
@@ -42,9 +45,9 @@ export const ProvenResultsSpotlight = () => {
         <linearGradient
           id="paint0_linear_210_96906"
           x1="1142.41"
-          y1="-30.9203"
+          y1="449.935"
           x2="488.088"
-          y2="638.135"
+          y2="1118.99"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#2B91CC" />

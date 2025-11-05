@@ -15,9 +15,7 @@ export const ProvenResults = () => {
           fill
           className="object-cover mix-blend-soft-light w-full"
         />
-        <div className="absolute top-1/2 left-[17.5%] -translate-y-1/2 w-full h-full z-10">
-          <ProvenResultsSpotlight />
-        </div>
+        <ProvenResultsSpotlight className="absolute top-[90%] lg:top-1/2 left-[75%] -translate-x-1/2 -translate-y-1/2" />
         <div className="space-y-6 relative z-10">
           <p
             className={cn(
@@ -39,7 +37,7 @@ export const ProvenResults = () => {
         </div>
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-10 relative z-10">
           {provenResultsStats.map((stat, index) => (
-            <div key={index} className="space-y-5">
+            <div key={index} className="space-y-3 md:space-y-5">
               <p className="font-medium text-[32px] md:text-7xl leading-tight md:leading-[1.31] text-white tracking-[-0.01em] md:tracking-normal">
                 {stat.prefix}
                 <CountUp
@@ -52,7 +50,7 @@ export const ProvenResults = () => {
                 {stat.suffix}
               </p>
               <div className="h-px bg-(--stroke-white-alpha)" />
-              <div className="">
+              <div className="space-y-2 md:space-y-3">
                 <p className="text-white text-base md:text-2xl leading-tight md:leading-[1.33]">
                   {stat.title}
                 </p>
