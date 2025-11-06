@@ -17,7 +17,7 @@ export const ProvenResults = () => {
         />
         <ProvenResultsSpotlight className="absolute top-[90%] lg:top-1/2 left-[75%] -translate-x-1/2 -translate-y-1/2" />
         <div className="space-y-6 relative z-10">
-          <p
+          <h2
             className={cn(
               playfairDisplay.className,
               "text-[40px] md:text-[52px] leading-[1.2] md:leading-[1.23] tracking-[-0.01em] text-white"
@@ -25,7 +25,7 @@ export const ProvenResults = () => {
           >
             Backed by{" "}
             <span className="italic gradient-text-proven">Proven Results</span>
-          </p>
+          </h2>
           <p className="text-base md:text-lg leading-[1.62] md:leading-[1.67] text-(--text-white-alpha) max-w-[775px]">
             Injuro is supported by personal injury lawyers with decades of
             experience and{" "}

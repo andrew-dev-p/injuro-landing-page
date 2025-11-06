@@ -8,3 +8,5 @@ export * from "./money";
 export * from "./case";
 export * from "./ai";
 export * from "./globe";
+export * from "./how-it-works-blue-gradient";
+export * from "./how-it-works-green-gradient";

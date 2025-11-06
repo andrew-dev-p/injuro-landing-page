@@ -7,7 +7,7 @@ import { WhyInjuroSpotlight } from "../svgs/why-injuro-spotlight";
 export const WhyInjuro = () => {
   return (
     <section className="container-md px-5 py-20 space-y-5 md:space-y-16">
-      <p
+      <h2
         className={cn(
           playfairDisplay.className,
           "text-[52px] leading-[1.23] tracking-[-0.01em] text-(--text-strong) text-center"
@@ -15,7 +15,7 @@ export const WhyInjuro = () => {
       >
         Why Injuro Outperforms{" "}
         <span className="italic heading-gradient-text">Everyone Else</span>
-      </p>
+      </h2>
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="lg:max-w-[550px] space-y-6">
           <Image

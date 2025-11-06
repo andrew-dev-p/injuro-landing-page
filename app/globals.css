@@ -86,6 +86,8 @@
   --stroke-surface: #ced8de;
   --stroke-hunter-lighter: #ecf4f0;
   --stroke-hunter-light: #dbece3;
+  --stroke-soft: #ecf0f2;
+  --timeline-gradient: linear-gradient(180deg, #77debe 0%, #52abde 100%);
 }
 
 .dark {
@@ -132,6 +134,8 @@
   --stroke-surface: #ced8de;
   --stroke-hunter-lighter: #ecf4f0;
   --stroke-hunter-light: #dbece3;
+  --stroke-soft: #ecf0f2;
+  --timeline-gradient: linear-gradient(180deg, #77debe 0%, #52abde 100%);
 }
 
 @layer base {
@@ -171,4 +175,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-timeline-gradient {
+  background: var(--timeline-gradient);
 }

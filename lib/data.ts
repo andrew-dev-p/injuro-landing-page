@@ -86,3 +86,36 @@ export const whyInjuroData = [
     icon: Globe,
   },
 ];
+
+export const howItWorksData = [
+  {
+    id: "1",
+    number: 1,
+    title: "Tell Us About Your Injury",
+    description: "We capture every detail with the highest accuracy.",
+    image: "/images/how-it-works-1.png",
+  },
+  {
+    id: "2",
+    number: 2,
+    title: "Build Your Case",
+    description:
+      "AI + experts prepare your claim with precision at a fraction of the cost.",
+    image: "/images/how-it-works-2.png",
+  },
+  {
+    id: "3",
+    number: 3,
+    title: "Negotiate With Confidence",
+    description:
+      "Strong, data-backed positions that consistently outperform traditional methods.",
+    image: "/images/how-it-works-3.png",
+  },
+  {
+    id: "4",
+    number: 4,
+    title: "Win Your Settlement",
+    description: "Get top-tier results while keeping more of your payout.",
+    image: "/images/how-it-works-4.png",
+  },
+];
