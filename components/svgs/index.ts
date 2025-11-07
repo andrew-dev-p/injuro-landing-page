@@ -11,3 +11,4 @@ export * from "./globe";
 export * from "./how-it-works-blue-gradient";
 export * from "./how-it-works-green-gradient";
 export { QuoteIcon } from "./quote";
+export { PlusMinusIcon } from "./plus-minus";

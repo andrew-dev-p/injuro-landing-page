@@ -146,3 +146,42 @@ export const testimonialsData = [
     image: "/images/testimonials-1.png",
   },
 ];
+
+export const faqData = [
+  {
+    id: "1",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+  {
+    id: "2",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+  {
+    id: "3",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+  {
+    id: "4",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+  {
+    id: "5",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+  {
+    id: "6",
+    question: "What is Injuro experience for law firms?",
+    answer:
+      "Explore the types of personal injury cases you can handle directly with Injuro. By representing yourself, you keep control of your case and take home up to double the cash compared to traditional legal fees.",
+  },
+];
