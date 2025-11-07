@@ -12,3 +12,6 @@ export * from "./how-it-works-blue-gradient";
 export * from "./how-it-works-green-gradient";
 export { QuoteIcon } from "./quote";
 export { PlusMinusIcon } from "./plus-minus";
+export { Headphones } from "./headphones";
+export { Clock } from "./clock";
+export * from "./case-review-spotlight";
