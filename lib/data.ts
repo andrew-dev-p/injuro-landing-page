@@ -119,3 +119,30 @@ export const howItWorksData = [
     image: "/images/how-it-works-4.png",
   },
 ];
+
+export const testimonialsData = [
+  {
+    id: "1",
+    quote:
+      "I've been in the personal injury business for 20 years. When it comes to reliably generating cases, Injuro is the best I've seen.",
+    name: "Olivia Martinez",
+    role: "CEO, Alexander Shunnarah Personal Injury Attorneys",
+    image: "/images/testimonials-1.png",
+  },
+  {
+    id: "2",
+    quote:
+      "I've been in the personal injury business for 20 years. When it comes to reliably generating cases, Injuro is the best I've seen.",
+    name: "Olivia Martinez",
+    role: "CEO, Alexander Shunnarah Personal Injury Attorneys",
+    image: "/images/testimonials-1.png",
+  },
+  {
+    id: "3",
+    quote:
+      "I've been in the personal injury business for 20 years. When it comes to reliably generating cases, Injuro is the best I've seen.",
+    name: "Olivia Martinez",
+    role: "CEO, Alexander Shunnarah Personal Injury Attorneys",
+    image: "/images/testimonials-1.png",
+  },
+];
