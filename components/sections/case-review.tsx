@@ -7,6 +7,7 @@ import { caseReviewFormSchema, type CaseReviewFormValues } from "@/lib/schemas";
 import { US_STATES, CASE_TYPES } from "@/lib/data";
 import { Clock, Headphones, CaseReviewSpotlight } from "../svgs";
 import { playfairDisplay } from "@/app/fonts";
+import Image from "next/image";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -46,7 +47,13 @@ export const CaseReview = () => {
   return (
     <section className="px-3">
       <div className="relative rounded-4xl py-20 px-16 bg-(--bg-black) grid grid-cols-2 gap-20 text-white overflow-hidden">
-        <CaseReviewSpotlight className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+        <Image
+          src="/images/noise.png"
+          alt="Background"
+          fill
+          className="object-cover mix-blend-soft-light w-full pointer-events-none opacity-65"
+        />
+        <CaseReviewSpotlight className="absolute -top-[15%] left-[40%] -translate-x-1/2 pointer-events-none" />
         <div className="space-y-16 relative z-10">
           <div className="space-y-5">
             <p
