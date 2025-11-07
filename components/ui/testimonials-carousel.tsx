@@ -211,7 +211,7 @@ export function TestimonialsCarousel({
         }}
         autoplay={false}
       >
-        {items.map((item, index) => (
+        {items.map((item) => (
           <SwiperSlide key={item.id} className="testimonials-slide">
             <div className="w-full">
               <div className="flex items-end justify-between">
@@ -224,7 +224,7 @@ export function TestimonialsCarousel({
                 />
               </div>
               <p className="max-w-[624px] mt-16 font-medium text-[32px] leading-tight text-(--text-strong) tracking-[-0.01em]">
-                "{item.quote}"
+                &quot;{item.quote}&quot;
               </p>
               <p className="mt-8 font-medium text-lg leading-[1.33] text-(--text-strong)">
                 {item.name}
@@ -317,4 +317,3 @@ export function TestimonialsCarousel({
     </div>
   );
 }
-
