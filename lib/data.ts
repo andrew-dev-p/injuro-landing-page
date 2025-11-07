@@ -249,3 +249,30 @@ export const CASE_TYPES = [
   "Product Liability",
   "Other",
 ];
+
+export const footerData = [
+  {
+    title: "Company",
+    links: [
+      { text: "Home", href: "#" },
+      { text: "About Us", href: "#" },
+      { text: "Contact", href: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { text: "Terms of Service", href: "#" },
+      { text: "Privacy Policy", href: "#" },
+      { text: "Disclaimer", href: "#" },
+    ],
+  },
+  {
+    title: "Follow Us",
+    links: [
+      { text: "Facebook", href: "#" },
+      { text: "Instagram", href: "#" },
+      { text: "Tiktok", href: "#" },
+    ],
+  },
+];

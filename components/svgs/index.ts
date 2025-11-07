@@ -15,3 +15,4 @@ export { PlusMinusIcon } from "./plus-minus";
 export { Headphones } from "./headphones";
 export { Clock } from "./clock";
 export * from "./case-review-spotlight";
+export { BigLogo } from "./big-logo";
