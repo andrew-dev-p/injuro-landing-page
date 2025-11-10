@@ -157,7 +157,7 @@ export function TestimonialsCarousel({
 
   return (
     <div
-      className="max-w-[624px]"
+      className="w-full lg:max-w-[624px]"
       onMouseEnter={pauseAutoplay}
       onMouseLeave={() => {
         if (pauseTimeoutRef.current) {
@@ -223,13 +223,13 @@ export function TestimonialsCarousel({
                   height={200}
                 />
               </div>
-              <p className="max-w-[624px] mt-16 font-medium text-[32px] leading-tight text-(--text-strong) tracking-[-0.01em]">
+              <p className="max-w-[624px] mt-10 md:mt-16 font-medium text-lg md:text-[32px] leading-[1.33] md:leading-tight text-(--text-strong) tracking-[-0.01em]">
                 &quot;{item.quote}&quot;
               </p>
-              <p className="mt-8 font-medium text-lg leading-[1.33] text-(--text-strong)">
+              <p className="mt-6 md:mt-8 font-medium text-lg leading-[1.33] text-(--text-strong)">
                 {item.name}
               </p>
-              <p className="mt-2 leading-[1.62] text-(--text-surface)">
+              <p className="mt-2 text-sm md:text-base leading-[1.57] md:leading-[1.62] text-(--text-surface)">
                 {item.role}
               </p>
             </div>
@@ -237,7 +237,7 @@ export function TestimonialsCarousel({
         ))}
       </Swiper>
 
-      <div className="mt-[40px] flex items-center justify-between">
+      <div className="mt-3 md:mt-5 flex items-center justify-between">
         <div className="carousel-pagination flex gap-2">
           {items.map((_, index) => (
             <button

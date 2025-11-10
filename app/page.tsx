@@ -19,8 +19,8 @@ export default function Home() {
       <CaseTypes />
       <WhyInjuro />
       <HowItWorks />
-      {/* <Testimonials />
-      <FAQ />
+      <Testimonials />
+      {/* <FAQ />
       <CaseReview /> */}
     </main>
   );
