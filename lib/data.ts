@@ -262,8 +262,8 @@ export const footerData = [
   {
     title: "Legal",
     links: [
-      { text: "Terms of Service", href: "#" },
-      { text: "Privacy Policy", href: "#" },
+      { text: "Terms of Service", href: "/terms-of-service" },
+      { text: "Privacy Policy", href: "/privacy-policy" },
       { text: "Disclaimer", href: "#" },
     ],
   },
