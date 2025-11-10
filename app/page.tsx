@@ -20,8 +20,8 @@ export default function Home() {
       <WhyInjuro />
       <HowItWorks />
       <Testimonials />
-      {/* <FAQ />
-      <CaseReview /> */}
+      <FAQ />
+      {/* <CaseReview /> */}
     </main>
   );
 }

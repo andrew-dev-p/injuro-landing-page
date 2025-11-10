@@ -12,12 +12,12 @@ import {
 export const FAQ = () => {
   return (
     <section className="bg-(--bg-tosca-soft)">
-      <div className="container-md px-5 pb-20 flex justify-between">
+      <div className="container-md px-5 pb-20 flex justify-between flex-col lg:flex-row gap-16 lg:gap-0">
         <div className="space-y-8">
           <p
             className={cn(
               playfairDisplay.className,
-              "max-w-[500px] text-[52px] leading-[1.23] tracking-[-0.01em] text-(--text-strong)"
+              "max-w-[500px] text-[40px] md:text-[52px] leading-[1.2] md:leading-[1.23] tracking-[-0.01em] text-(--text-strong)"
             )}
           >
             Got any questions?{" "}
@@ -29,7 +29,11 @@ export const FAQ = () => {
             Contact Us
           </Button>
         </div>
-        <Accordion type="single" defaultValue="1" className="w-[624px]">
+        <Accordion
+          type="single"
+          defaultValue="1"
+          className="w-full lg:w-[624px]"
+        >
           {faqData.map((item) => (
             <AccordionItem
               key={item.id}
@@ -38,12 +42,12 @@ export const FAQ = () => {
             >
               <div className="p-6">
                 <AccordionTrigger className="p-0">
-                  <p className="text-2xl font-medium leading-[1.33] text-(--text-strong)">
+                  <p className="text-lg md:text-2xl font-medium leading-[1.33] text-(--text-strong)">
                     {item.question}
                   </p>
                 </AccordionTrigger>
                 <AccordionContent className="p-0">
-                  <p className="text-lg leading-[1.67] text-(--text-surface) mt-5">
+                  <p className="text-base md:text-lg leading-[1.62] md:leading-[1.67] text-(--text-surface) mt-5">
                     {item.answer}
                   </p>
                 </AccordionContent>
