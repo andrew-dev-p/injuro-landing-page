@@ -37,7 +37,7 @@ export const WhyInjuro = () => {
               <div
                 key={item.id}
                 className={cn(
-                  "p-8 rounded-[12px] bg-(--stroke-hunter-lighter) border border-(--stroke-hunter-light) h-full flex flex-col justify-between gap-3 md:gap-8",
+                  "p-3 md:p-8 rounded-[12px] bg-(--stroke-hunter-lighter) border border-(--stroke-hunter-light) h-full flex flex-col justify-between gap-3 md:gap-8",
                   item.id === "1" &&
                     "bg-(--bg-black) border-transparent relative overflow-hidden"
                 )}
