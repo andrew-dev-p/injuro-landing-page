@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const BeliefStatement = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+  const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
     if (!textRef.current || !sectionRef.current) return;
@@ -31,6 +32,8 @@ export const BeliefStatement = () => {
         end: "bottom 35%",
       },
     });
+
+    timelineRef.current = timeline;
 
     timeline.to(wordSpans, {
       opacity: 1,
@@ -54,7 +57,14 @@ export const BeliefStatement = () => {
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      if (timelineRef.current) {
+        const scrollTrigger = timelineRef.current.scrollTrigger;
+        if (scrollTrigger) {
+          scrollTrigger.kill();
+        }
+        timelineRef.current.kill();
+        timelineRef.current = null;
+      }
     };
   }, []);
 

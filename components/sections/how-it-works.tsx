@@ -264,10 +264,13 @@ export const HowItWorks = () => {
 
     return () => {
       if (timelineInstanceRef.current) {
+        const scrollTrigger = timelineInstanceRef.current.scrollTrigger;
+        if (scrollTrigger) {
+          scrollTrigger.kill();
+        }
         timelineInstanceRef.current.kill();
         timelineInstanceRef.current = null;
       }
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [createAnimation, isSmallScreen]);
 
