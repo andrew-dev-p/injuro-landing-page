@@ -21,7 +21,7 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <FAQ />
-      {/* <CaseReview /> */}
+      <CaseReview />
     </main>
   );
 }

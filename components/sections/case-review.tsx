@@ -46,25 +46,25 @@ export const CaseReview = () => {
 
   return (
     <section className="px-3">
-      <div className="relative rounded-4xl py-20 px-16 bg-(--bg-black) grid grid-cols-2 gap-20 text-white overflow-hidden">
+      <div className="relative rounded-4xl py-10 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 bg-(--bg-black) grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20 text-white overflow-hidden">
         <Image
           src="/images/noise.png"
           alt="Background"
           fill
           className="object-cover mix-blend-soft-light w-full pointer-events-none opacity-65"
         />
-        <CaseReviewSpotlight className="absolute -top-[15%] left-[40%] -translate-x-1/2 pointer-events-none" />
-        <div className="space-y-16 relative z-10">
+        <CaseReviewSpotlight className="absolute -top-[15%] left-[50%] lg:left-[40%] -translate-x-1/2 pointer-events-none" />
+        <div className="space-y-8 md:space-y-12 lg:space-y-16 relative z-10">
           <div className="space-y-5">
             <p
               className={cn(
                 playfairDisplay.className,
-                "font-medium text-[52px] leading-[1.3]"
+                "font-medium text-[40px] md:text-[52px] leading-[1.2] md:leading-[1.3]"
               )}
             >
               Free Case Review
             </p>
-            <p className="text-lg leading-[1.6] text-(--text-white-alpha)">
+            <p className="text-base md:text-lg leading-[1.62] md:leading-[1.6] text-(--text-white-alpha)">
               Get the best quality case assessment on the market—100% free. No
               risk, no obligation, and you&apos;ll instantly see how much more
               you can keep.
@@ -74,7 +74,7 @@ export const CaseReview = () => {
             <div className="flex gap-3">
               <Headphones />
               <div className="space-y-2">
-                <p className="font-medium text-2xl leading-[1.33]">
+                <p className="font-medium text-lg md:text-2xl leading-[1.33]">
                   Real-time support
                 </p>
                 <p className="leading-[1.62] text-(--text-white-alpha)">
@@ -85,7 +85,7 @@ export const CaseReview = () => {
             <div className="flex gap-3">
               <Clock />
               <div className="space-y-2">
-                <p className="font-medium text-2xl leading-[1.33]">
+                <p className="font-medium text-lg md:text-2xl leading-[1.33]">
                   24/7 call center
                 </p>
                 <p className="leading-[1.62] text-(--text-white-alpha)">
@@ -97,9 +97,9 @@ export const CaseReview = () => {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="relative z-10 bg-white/90 rounded-[20px] p-8 border border-(--stroke-soft) space-y-6"
+          className="relative z-10 bg-white/90 rounded-[20px] p-4 md:p-6 lg:p-8 border border-(--stroke-soft) space-y-6"
         >
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <Label htmlFor="name">Name</Label>
               <Input
@@ -142,7 +142,7 @@ export const CaseReview = () => {
               <p className="text-sm text-destructive">{errors.email.message}</p>
             )}
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <Label htmlFor="state">State your incident Occurred*</Label>
               <Controller
@@ -239,7 +239,7 @@ export const CaseReview = () => {
             />
             <Label
               htmlFor="consent"
-              className="text-sm font-normal leading-[1.57] text-(--text-surface)"
+              className="text-sm font-normal leading-normal md:leading-[1.57] text-(--text-surface)"
             >
               I agree to receive automated communications, including calls,
               texts, and emails from Injuro.
@@ -252,7 +252,7 @@ export const CaseReview = () => {
           )}
           <Button
             type="submit"
-            className="w-full bg-[#1CC79E] hover:bg-[#1CC79E]/90 text-white"
+            className="w-full bg-[#1CC79E] hover:bg-[#1CC79E]/90 text-white text-base"
           >
             Request a Call Back
           </Button>
