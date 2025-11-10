@@ -1,11 +1,42 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 export default function TermsOfService() {
   const [isLoading, setIsLoading] = useState(true);
   const embedRef = useRef<HTMLDivElement>(null);
+  const checkIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Wait for Termly to initialize by checking for content
+  const waitForTermlyInit = useCallback(() => {
+    // Clear any existing interval
+    if (checkIntervalRef.current) {
+      clearInterval(checkIntervalRef.current);
+    }
+
+    let attempts = 0;
+    const maxAttempts = 50; // 5 seconds max
+    
+    checkIntervalRef.current = setInterval(() => {
+      attempts++;
+      if (embedRef.current) {
+        // Check if Termly has rendered content (has children or specific Termly elements)
+        const hasContent = 
+          embedRef.current.children.length > 0 ||
+          embedRef.current.querySelector('[id*="termly"]') !== null ||
+          embedRef.current.innerHTML.trim().length > 0;
+        
+        if (hasContent || attempts >= maxAttempts) {
+          if (checkIntervalRef.current) {
+            clearInterval(checkIntervalRef.current);
+            checkIntervalRef.current = null;
+          }
+          setIsLoading(false);
+        }
+      }
+    }, 100);
+  }, []);
 
   useEffect(() => {
     if (embedRef.current) {
@@ -15,7 +46,31 @@ export default function TermsOfService() {
         "40222f49-90a3-443b-85c8-c69225cd72c7"
       );
     }
-  }, []);
+
+    // Check if script is already loaded (client-side navigation case)
+    const existingScript = document.getElementById("termly-jssdk");
+    if (existingScript) {
+      // Script already exists, start checking for content immediately
+      // Give it a moment for Termly to process the new embed
+      setTimeout(() => {
+        waitForTermlyInit();
+      }, 300);
+    }
+
+    return () => {
+      // Cleanup interval on unmount
+      if (checkIntervalRef.current) {
+        clearInterval(checkIntervalRef.current);
+      }
+    };
+  }, [waitForTermlyInit]);
+
+  const handleScriptLoad = () => {
+    // Give Termly a moment to process the embed
+    setTimeout(() => {
+      waitForTermlyInit();
+    }, 300);
+  };
 
   return (
     <main className="min-h-screen">
@@ -37,12 +92,7 @@ export default function TermsOfService() {
         id="termly-jssdk"
         strategy="afterInteractive"
         src="https://app.termly.io/embed-policy.min.js"
-        onLoad={() => {
-          // Give Termly a moment to initialize
-          setTimeout(() => {
-            setIsLoading(false);
-          }, 500);
-        }}
+        onLoad={handleScriptLoad}
         onError={() => {
           setIsLoading(false);
         }}
